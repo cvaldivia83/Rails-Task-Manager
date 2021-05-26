@@ -1,7 +1,8 @@
+<h1 class="h1 text-secondary mb-3 mt-2">My tasks</h1>
 
 <% @tasks.each do |task| %>
 
-  <div>
+  <div class="mb-1">
     <input type="checkbox" id= <%= task.title %> name= <%= task.title %> >
 
     <%= link_to task_path(task) do %>
@@ -12,7 +13,7 @@
 
 <% end %>
 
-<%= link_to "Add new task", new_task_path %>
+<%= link_to "Add new task", new_task_path, class: "mt-3" %>
 
 
 
